@@ -6,7 +6,7 @@ import Container from "@/components/Container/Container";
 
 const Header: FC = () => {
   return (
-    <header className="bg-gradient-to-l from-indigo-700 to-indigo-300 p-4">
+    <header className="bg-blue-700 p-4 fixed w-full">
       <Container>
         <div className="flex justify-between items-center">
           <Image src={"/logo.svg"} width={70} height={50} alt="logo" />

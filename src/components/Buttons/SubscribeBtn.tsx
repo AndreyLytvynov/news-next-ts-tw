@@ -5,7 +5,7 @@ const SubscribeBtn: FC = () => {
   return (
     <Link
       href={"/sign-up"}
-      className="text-center mx-auto px-5 py-3 border-slate-50 border-2 rounded"
+      className="block w-48 mx-auto px-5 py-3 text-center font-bold text-2xl border-slate-50 border-2 rounded "
     >
       Subscribe
     </Link>
