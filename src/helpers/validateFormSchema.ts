@@ -17,8 +17,7 @@ export const schema = yup.object().shape({
   phone: yup
     .string()
     .trim()
-    .min(14, "Minimal phone length is 14 symbols")
-    .max(14, "Max phone length is 14 symbols")
+    .matches(/^\+\d{3}\d{9,}$/, "Phone must be in the format: +380990000000")
     .required("Phone is required"),
   newsletter: yup.boolean().oneOf([true], "Checkbox must be checked"),
 });
