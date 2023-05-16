@@ -11,13 +11,13 @@ type INewsItemProps = {
 
 const NewsItem: FC<INewsItemProps> = ({ news }) => {
   return (
-    <li className="sm:w-[calc(100%/2-0.375rem)] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <li className="sm:w-[calc(100%/2-0.375rem)] lg:w-[calc(100%/3-0.5rem)] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <a href="#">
         <Image
           className="rounded-t-lg"
           src="/bg.png"
           alt="Description"
-          width={650}
+          width={744}
           height={400}
         />
       </a>
@@ -32,7 +32,7 @@ const NewsItem: FC<INewsItemProps> = ({ news }) => {
         </p>
         <a
           href="#"
-          className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
           Read more
           <IconArrowRight />

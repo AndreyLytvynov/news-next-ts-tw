@@ -1,14 +1,30 @@
 import React, { FC } from "react";
+import { Link } from "react-scroll";
 
 const MainNav: FC = () => {
   return (
     <nav>
       <ul className="flex gap-12 text-slate-50 ">
-        <li>
-          <span>block 1</span>
+        <li className="cursor-pointer">
+          <Link
+            to="subscribe"
+            smooth={true}
+            duration={700}
+            className="py-4 hover:text-blue-400"
+          >
+            <span>SUBSCRIBE</span>
+          </Link>
         </li>
-        <li>
-          <span>block 2</span>
+        <li className="cursor-pointer">
+          <Link
+            to="news"
+            smooth={true}
+            offset={-80}
+            duration={700}
+            className="py-4 hover:text-blue-400"
+          >
+            <span>NEWS</span>
+          </Link>
         </li>
       </ul>
     </nav>
