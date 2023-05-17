@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 const MainNav: FC = () => {
   return (
     <nav>
-      <ul className="flex gap-12 text-slate-50 ">
+      <ul className="flex gap-8 text-slate-50 ">
         <li className="cursor-pointer">
           <Link
             to="subscribe"

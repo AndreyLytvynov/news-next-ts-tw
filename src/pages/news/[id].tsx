@@ -3,6 +3,7 @@ import { FC } from "react";
 import { INewsItem } from "@/types/news.type";
 
 import { request } from "@/lib/datocms";
+import NewsDetails from "@/components/Sections/NewsDetails";
 
 type INewsDetailsProps = {
   news: {
@@ -11,7 +12,11 @@ type INewsDetailsProps = {
 };
 
 const NewsDetailsPage: FC<INewsDetailsProps> = ({ news }) => {
-  return <div>{news.news.title}</div>;
+  return (
+    <div>
+      <NewsDetails news={news.news} />
+    </div>
+  );
 };
 export default NewsDetailsPage;
 
@@ -39,6 +44,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
             title
             date
             description
+            text
             image {
                 url
                 title

@@ -4,7 +4,7 @@ import SubscribeBtn from "@/components/Buttons/SubscribeBtn";
 
 const HeroSection: FC = () => {
   return (
-    <div
+    <section
       className="bg-cover bg-center h-120 text-slate-50  flex flex-col justify-center items-center"
       style={{
         backgroundImage:
@@ -28,7 +28,7 @@ const HeroSection: FC = () => {
         </p>
         <SubscribeBtn />
       </Container>
-    </div>
+    </section>
   );
 };
 

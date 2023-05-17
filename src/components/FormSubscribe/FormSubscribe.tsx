@@ -46,7 +46,7 @@ const FormSubscribe: FC = () => {
           </div>
           <div className="md:w-11/12">
             <input
-              className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+              className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-400"
               id="inline-name"
               type="text"
               placeholder="Djack Wick"
@@ -69,7 +69,7 @@ const FormSubscribe: FC = () => {
           </div>
           <div className="md:w-11/12">
             <input
-              className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+              className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-400"
               id="inline-phone"
               type="tel"
               placeholder="+380990000000"
@@ -92,7 +92,7 @@ const FormSubscribe: FC = () => {
           </div>
           <div className="md:w-11/12">
             <input
-              className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+              className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-400"
               id="inline-email"
               type="email"
               placeholder="hello@example.com"
