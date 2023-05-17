@@ -1,15 +1,12 @@
 import { FC } from "react";
 import Container from "@/components/Container/Container";
 import SubscribeBtn from "@/components/Buttons/SubscribeBtn";
+import styles from "@/styles/hero.module.css";
 
 const HeroSection: FC = () => {
   return (
     <section
-      className="bg-cover bg-center h-120 text-slate-50  flex flex-col justify-center items-center"
-      style={{
-        backgroundImage:
-          "linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url('/bg.png')",
-      }}
+      className={`${styles.box} bg-cover bg-center h-120 text-slate-50  flex flex-col justify-center items-center`}
       id="subscribe"
     >
       <Container>

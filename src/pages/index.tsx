@@ -1,5 +1,4 @@
 import { FC } from "react";
-import Head from "next/head";
 
 import HeroSection from "@/components/Sections/HeroSection";
 import NewsSection from "@/components/Sections/NewsSection";
@@ -19,9 +18,6 @@ const HomePage: FC<IHomePageProps> = ({ data }) => {
 
   return (
     <>
-      <Head>
-        <title>News JS</title>
-      </Head>
       <HeroSection />
       <NewsSection news={news} />
     </>
