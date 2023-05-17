@@ -13,9 +13,9 @@ type INewsDetailsProps = {
 
 const NewsDetailsPage: FC<INewsDetailsProps> = ({ news }) => {
   return (
-    <div>
+    <>
       <NewsDetails news={news.news} />
-    </div>
+    </>
   );
 };
 export default NewsDetailsPage;
@@ -49,6 +49,14 @@ export const getStaticProps: GetStaticProps = async (context) => {
                 url
                 title
                 alt
+            }
+            autor {
+              name
+              post
+              photo {
+                url
+                title
+                }
             }
         }
     }`;
