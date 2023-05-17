@@ -1,6 +1,7 @@
 import { FC, ReactNode } from "react";
 import Header from "@/components/Header/Header";
 import Head from "next/head";
+import Footer from "../Footer/Footer";
 
 type ILayoutProps = {
   children: ReactNode;
@@ -22,7 +23,8 @@ const Layout: FC<ILayoutProps> = ({ children }) => {
         />
       </Head>
       <Header />
-      {children}
+      <main>{children}</main>
+      <Footer />
     </>
   );
 };

@@ -15,3 +15,14 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+body::after {
+  content: "";
+  display: block;
+  height: 100px;
+}
