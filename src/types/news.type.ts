@@ -1,6 +1,11 @@
 export type INewsItem = {
-  id: string;
-  title: string;
-  text: string;
   date: string;
+  description: string;
+  id: string;
+  image: {
+    alt: string;
+    title: string;
+    url: string;
+  };
+  title: string;
 };
