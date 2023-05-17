@@ -12,7 +12,7 @@ const MainNav: FC = () => {
             duration={700}
             className="py-4 hover:text-blue-400"
           >
-            <span>SUBSCRIBE</span>
+            <span>HOME</span>
           </Link>
         </li>
         <li className="cursor-pointer">
