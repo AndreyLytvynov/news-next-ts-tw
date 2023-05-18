@@ -1,6 +1,5 @@
 import { FC } from "react";
 
-import Container from "@/components/elements/Container/Container";
 import SubscribeFormSection from "@/components/sections/SubscribeFormSection/SubscribeFormSection";
 
 import { ToastContainer } from "react-toastify";

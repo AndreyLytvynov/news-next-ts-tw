@@ -3,6 +3,7 @@ import Image from "next/image";
 import { GetStaticPaths, GetStaticProps } from "next";
 
 import { request } from "@/lib/datocms";
+import { getNewsDetailsQuery } from "@/helpers/getNewsDetailsQuery";
 
 import Container from "@/components/elements/Container/Container";
 import AuthorNews from "@/components/elements/AuthorNews/AuthorNews";
@@ -66,28 +67,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const { id } = context.params as { id: string };
-  const NEW_DETAILS_QUERY = `{news(filter: { id: { eq: ${id} } }) 
-        {
-            id
-            title
-            date
-            description
-            text
-            image {
-                url
-                title
-                alt
-            }
-            autor {
-              name
-              post
-              photo {
-                url
-                title
-                }
-            }
-        }
-    }`;
+  const NEW_DETAILS_QUERY = getNewsDetailsQuery(id);
 
   const data = await request({
     query: NEW_DETAILS_QUERY,

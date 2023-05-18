@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import { Merriweather } from "next/font/google";
 
-import styles from "@/styles/logo.module.css";
+import styles from "@/components/ui/Logo/logo.module.css";
 
 const merriweather = Merriweather({
   subsets: ["latin"],

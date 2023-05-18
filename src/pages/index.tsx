@@ -6,6 +6,7 @@ import NewsSection from "@/components/sections/NewsSection/NewsSection";
 import { request } from "@/lib/datocms";
 
 import { INewsItem } from "@/types/news.type";
+import { HOMEPAGE_QUERY } from "@/Constants/api";
 
 type IHomePageProps = {
   data: {
@@ -25,20 +26,6 @@ const HomePage: FC<IHomePageProps> = ({ data }) => {
 };
 
 export default HomePage;
-
-const HOMEPAGE_QUERY = `{
-  allNews {
-    id
-    title
-    date
-    description
-    image {
-      url
-      title
-      alt
-    }
-  }
-}`;
 
 export async function getStaticProps() {
   const data = await request({

@@ -3,7 +3,7 @@ import { FC } from "react";
 import Container from "@/components/elements/Container/Container";
 import SubscribeBtn from "@/components/ui/Buttons/SubscribeBtn";
 
-import styles from "@/styles/hero.module.css";
+import styles from "@/components/sections/HeroSection/hero.module.css";
 
 const HeroSection: FC = () => {
   return (
