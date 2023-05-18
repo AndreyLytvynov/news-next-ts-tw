@@ -11,7 +11,7 @@ export const getNewsDetailsQuery = (id: string) => `
         title
         alt
       }
-      autor {
+      author {
         name
         post
         photo {

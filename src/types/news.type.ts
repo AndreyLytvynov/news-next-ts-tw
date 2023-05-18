@@ -17,6 +17,6 @@ export type INewsItem = {
     title: string;
     url: string;
   };
-  autor?: Author[];
+  author?: Author[];
   title: string;
 };

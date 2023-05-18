@@ -30,7 +30,7 @@ const NewsDetailsPage: FC<INewsDetailsProps> = ({ news }) => {
             width={600}
             height={400}
           />
-          {news.news?.autor && <AuthorNews author={news.news.autor[0]} />}
+          {news.news?.author && <AuthorNews author={news.news.author[0]} />}
 
           <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {news.news.title}
