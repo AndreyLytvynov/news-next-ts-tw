@@ -7,7 +7,7 @@ import { schema } from "@/helpers/validateFormSchema";
 
 import InputsSubscribeForm from "@/components/ui/Inputs/InputsSubscribeForm/InputsSubscribeForm";
 import CheckBoxSubscribeForm from "@/components/ui/checkboxes/CheckBoxSubscribeForm/CheckBoxSubscribeForm";
-import SubmitFormBtn from "@/components/ui/buttons/SubmitFormBtn";
+import SubmitFormBtn from "@/components/ui/Buttons/SubmitFormBtn";
 
 import ToastMessage from "@/components/ui/Toast/Toast";
 import { ToastMessageType } from "@/components/ui/Toast/interfaces";

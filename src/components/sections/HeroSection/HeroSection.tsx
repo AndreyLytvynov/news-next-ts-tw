@@ -1,7 +1,7 @@
 import { FC } from "react";
 
 import Container from "@/components/elements/Container/Container";
-import SubscribeBtn from "@/components/ui/buttons/SubscribeBtn";
+import SubscribeBtn from "@/components/ui/Buttons/SubscribeBtn";
 
 import styles from "@/components/sections/HeroSection/hero.module.css";
 
