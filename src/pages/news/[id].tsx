@@ -1,9 +1,13 @@
-import { GetStaticPaths, GetStaticProps } from "next";
 import { FC } from "react";
-import { INewsItem } from "@/types/news.type";
+import Image from "next/image";
+import { GetStaticPaths, GetStaticProps } from "next";
 
 import { request } from "@/lib/datocms";
-import NewsDetails from "@/components/Sections/NewsDetails";
+
+import Container from "@/components/elements/Container/Container";
+import AuthorNews from "@/components/elements/AuthorNews/AuthorNews";
+
+import { INewsItem } from "@/types/news.type";
 
 type INewsDetailsProps = {
   news: {
@@ -12,9 +16,33 @@ type INewsDetailsProps = {
 };
 
 const NewsDetailsPage: FC<INewsDetailsProps> = ({ news }) => {
+  const paragraphs = news.news.text?.split("\n") || [];
+
   return (
     <>
-      <NewsDetails news={news.news} />
+      <section className="pt-24 flex flex-col pb-4">
+        <Container>
+          <Image
+            className="items-center object-cover mx-auto mb-4"
+            src={news.news.image.url}
+            alt={news.news.image.alt}
+            width={600}
+            height={400}
+          />
+          {news.news?.autor && <AuthorNews author={news.news.autor[0]} />}
+
+          <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            {news.news.title}
+          </h2>
+          <div>
+            {paragraphs.map((paragraph, index) => (
+              <p className="first-letter:pl-10" key={index}>
+                {paragraph}
+              </p>
+            ))}
+          </div>
+        </Container>
+      </section>
     </>
   );
 };

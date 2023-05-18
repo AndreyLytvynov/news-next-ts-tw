@@ -17,7 +17,7 @@ export const schema = yup.object().shape({
   phone: yup
     .string()
     .trim()
-    .matches(/^\+\d{3}\d{9,}$/, "Phone must be in the format: +380990000000")
+    .matches(/^\+\d{3}\d{9,}$/, "Phone must be in the format: +380XXXXXXXXX")
     .required("Phone is required"),
   newsletter: yup.boolean().oneOf([true], "Checkbox must be checked"),
 });

@@ -1,7 +1,7 @@
 import { FC } from "react";
 
-import HeroSection from "@/components/Sections/HeroSection";
-import NewsSection from "@/components/Sections/NewsSection";
+import HeroSection from "@/components/sections/HeroSection/HeroSection";
+import NewsSection from "@/components/sections/NewsSection/NewsSection";
 
 import { request } from "@/lib/datocms";
 

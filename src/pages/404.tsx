@@ -1,8 +1,9 @@
-import { useEffect } from "react";
+import { FC, useEffect } from "react";
 import { useRouter } from "next/router";
-import Container from "@/components/Container/Container";
 
-const Error = () => {
+import Container from "@/components/elements/Container/Container";
+
+const ErrorPage: FC = () => {
   const router = useRouter();
 
   useEffect(() => {
@@ -25,4 +26,4 @@ const Error = () => {
   );
 };
 
-export default Error;
+export default ErrorPage;

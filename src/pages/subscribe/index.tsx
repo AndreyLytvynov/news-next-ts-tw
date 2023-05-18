@@ -1,14 +1,14 @@
 import { FC } from "react";
 
-import Container from "@/components/Container/Container";
-import SubscribeFormSection from "@/components/Sections/SubscribeFormSection";
+import Container from "@/components/elements/Container/Container";
+import SubscribeFormSection from "@/components/sections/SubscribeFormSection/SubscribeFormSection";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const SubscribePage: FC = () => {
   return (
-    <Container>
+    <>
       <SubscribeFormSection />
       <ToastContainer
         position="bottom-right"
@@ -20,7 +20,7 @@ const SubscribePage: FC = () => {
         pauseOnHover
         className="mb-20"
       />
-    </Container>
+    </>
   );
 };
 
