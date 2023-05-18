@@ -2,7 +2,6 @@ import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import { truncateString } from "@/helpers/truncateString";
 import IconArrowRight from "@/components/ui/Icons/IconArrowRight";
 
 import { INewsItemProps } from "@/components/elements/NewsItem/types";
@@ -19,20 +18,17 @@ const NewsItem: FC<INewsItemProps> = ({ news }) => {
           height={400}
         />
       </div>
-      <div className="p-5  md:h-1/2 flex flex-col justify-between">
-        <div className="h-4/6">
-          <div className="h-1/2 mb-2">
-            <h3 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white ">
-              {truncateString(news.title, 60)}
-            </h3>
-          </div>
+      <div className="p-3 md:h-1/2 flex flex-col justify-between">
+        <div className="h-4/6 md:h-5/6">
+          <h3 className=" mb-3 text-2xl font-bold tracking-tight text-gray-900 dark:text-white line-clamp-2">
+            {news.title}
+          </h3>
 
-          <p className=" h-1/2 mb-3 font-normal text-gray-700 dark:text-gray-400">
-            {truncateString(news.description, 195)}
+          <p className=" font-normal text-gray-700 dark:text-gray-400 line-clamp-4 md:line-clamp-6  lg:line-clamp-5">
+            {news.description}
           </p>
         </div>
-
-        <div className="h-1/6 flex flex-row items-center justify-between">
+        <div className="mt-3 h-2/6 md:h-1/6 flex flex-row items-center justify-between">
           <Link
             href={`news/${news.id}`}
             className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 hover:duration-300"
