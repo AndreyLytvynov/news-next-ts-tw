@@ -64,7 +64,7 @@ const FormSubscribe: FC = () => {
         <InputsSubscribeForm
           label="Phone"
           id="inline-phone"
-          placeholder="+380990000000"
+          placeholder="+380XXXXXXXXX"
           register={register("phone")}
           error={errors?.phone?.message}
         />
