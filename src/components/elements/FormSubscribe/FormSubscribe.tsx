@@ -49,41 +49,39 @@ const FormSubscribe: FC = () => {
 
   return (
     <form
-      className="flex flex-col items-center"
+      className="flex flex-col items-center shadow p-4 max-w-full w-120 mx-auto gap-6"
       onSubmit={handleSubmit(onSubmit)}
       noValidate
     >
-      <div className="shadow p-4 max-w-full w-120">
-        <InputsSubscribeForm
-          label="Name"
-          id="inline-name"
-          placeholder="Djack Wick"
-          register={register("name")}
-          error={errors?.name?.message}
-        />
-        <InputsSubscribeForm
-          label="Phone"
-          id="inline-phone"
-          placeholder="+380XXXXXXXXX"
-          register={register("phone")}
-          error={errors?.phone?.message}
-        />
-        <InputsSubscribeForm
-          label="Email"
-          id="inline-email"
-          placeholder="hello@example.com"
-          register={register("email")}
-          error={errors?.email?.message}
-        />
-        <CheckBoxSubscribeForm
-          id="inline-email"
-          register={register("newsletter")}
-          error={errors?.newsletter?.message}
-        />
+      <InputsSubscribeForm
+        label="Name"
+        id="inline-name"
+        placeholder="Djack Wick"
+        register={register("name")}
+        error={errors?.name?.message}
+      />
+      <InputsSubscribeForm
+        label="Phone"
+        id="inline-phone"
+        placeholder="+380XXXXXXXXX"
+        register={register("phone")}
+        error={errors?.phone?.message}
+      />
+      <InputsSubscribeForm
+        label="Email"
+        id="inline-email"
+        placeholder="hello@example.com"
+        register={register("email")}
+        error={errors?.email?.message}
+      />
+      <CheckBoxSubscribeForm
+        id="inline-email"
+        register={register("newsletter")}
+        error={errors?.newsletter?.message}
+      />
 
-        <div className="md:flex md:justify-center">
-          <SubmitFormBtn />
-        </div>
+      <div className="md:flex md:justify-center">
+        <SubmitFormBtn />
       </div>
     </form>
   );

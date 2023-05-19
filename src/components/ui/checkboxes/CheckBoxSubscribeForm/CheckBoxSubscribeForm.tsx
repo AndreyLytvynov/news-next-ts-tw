@@ -7,9 +7,9 @@ const CheckBoxSubscribeForm: FC<CheckBoxFieldProps> = ({
   register,
 }) => {
   return (
-    <div className="md:flex mb-6">
-      <div className="md:w-2/12"></div>
-      <label className="md:w-11/12 block text-gray-500 font-bold" htmlFor={id}>
+    <label className="w-full sm:flex items-center mb-6" htmlFor={id}>
+      <div className="sm:w-20"></div>
+      <div className="sm:w-96 block text-gray-500 font-bold">
         <input
           className="mr-2 leading-tight"
           type="checkbox"
@@ -22,8 +22,8 @@ const CheckBoxSubscribeForm: FC<CheckBoxFieldProps> = ({
             {error}
           </div>
         )}
-      </label>
-    </div>
+      </div>
+    </label>
   );
 };
 
