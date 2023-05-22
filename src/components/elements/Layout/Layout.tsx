@@ -21,9 +21,11 @@ const Layout: FC<ILayoutProps> = ({ children }) => {
           content="JavaScript, news, development, frameworks, tools"
         />
       </Head>
-      <Header />
-      <main>{children}</main>
-      <Footer />
+      <div className="flex h-full min-h-screen flex-col">
+        <Header />
+        <main className="flex-grow ">{children}</main>
+        <Footer />
+      </div>
     </>
   );
 };
