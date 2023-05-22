@@ -18,6 +18,7 @@ const SubscribePage: FC = () => {
         closeOnClick
         pauseOnHover
         className="mb-20"
+        limit={3}
       />
     </>
   );
