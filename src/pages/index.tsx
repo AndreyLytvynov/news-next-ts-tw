@@ -1,6 +1,7 @@
 import { FC } from "react";
 
 import HeroSection from "@/components/sections/HeroSection/HeroSection";
+import SliderSection from "@/components/sections/SliderSection/SliderSection";
 import NewsSection from "@/components/sections/NewsSection/NewsSection";
 
 import { request } from "@/lib/datocms";
@@ -20,6 +21,7 @@ const HomePage: FC<IHomePageProps> = ({ data }) => {
   return (
     <>
       <HeroSection />
+      <SliderSection news={news} />
       <NewsSection news={news} />
     </>
   );

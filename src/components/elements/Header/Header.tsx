@@ -11,7 +11,7 @@ const Header: FC = () => {
   const currentRoute = router.pathname;
 
   return (
-    <header className="bg-slate-600 h-20 p-4 fixed w-full flex items-center bg-opacity-75">
+    <header className="bg-slate-600 h-20 p-4 fixed w-full flex items-center bg-opacity-75 z-10">
       <Container>
         <div className="flex justify-between items-center">
           <Logo />
