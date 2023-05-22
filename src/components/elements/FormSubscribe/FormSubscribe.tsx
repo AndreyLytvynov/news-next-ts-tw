@@ -1,4 +1,4 @@
-import { FC, useCallback, useEffect } from "react";
+import { FC, useCallback, useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
 import { useForm, SubmitHandler } from "react-hook-form";
@@ -7,7 +7,7 @@ import { schema } from "@/helpers/validateFormSchema";
 
 import InputsSubscribeForm from "@/components/ui/Inputs/InputsSubscribeForm/InputsSubscribeForm";
 import CheckBoxSubscribeForm from "@/components/ui/checkboxes/CheckBoxSubscribeForm/CheckBoxSubscribeForm";
-import SubmitFormBtn from "@/components/ui/Buttons/SubmitFormBtn";
+import SubmitFormBtn from "@/components/ui/Buttons/SubmitFormBtn/SubmitFormBtn";
 
 import ToastMessage from "@/components/ui/Toast/Toast";
 import { ToastMessageType } from "@/components/ui/Toast/interfaces";
@@ -23,6 +23,7 @@ const FormSubscribe: FC = () => {
   } = useForm<IFormValues>({
     resolver: yupResolver(schema),
   });
+  const [disabledBtn, setDisabledBtn] = useState<boolean>(false);
   const router = useRouter();
 
   const notify = useCallback((type: ToastMessageType, message: string) => {
@@ -42,6 +43,7 @@ const FormSubscribe: FC = () => {
     console.log(data);
     notify("success", "Success! Please check your email.");
     reset();
+    setDisabledBtn(true);
     setTimeout(() => {
       router.replace("/");
     }, 2000);
@@ -81,7 +83,7 @@ const FormSubscribe: FC = () => {
       />
 
       <div className="md:flex md:justify-center">
-        <SubmitFormBtn />
+        <SubmitFormBtn disabled={disabledBtn} />
       </div>
     </form>
   );

@@ -1,9 +1,9 @@
 import { FC } from "react";
 
 import Container from "@/components/elements/Container/Container";
-import SubscribeBtn from "@/components/ui/Buttons/SubscribeBtn";
 
 import styles from "@/components/sections/HeroSection/hero.module.css";
+import Link from "next/link";
 
 const HeroSection: FC = () => {
   return (
@@ -25,7 +25,12 @@ const HeroSection: FC = () => {
           Stay ahead with our informative content. Sign up now for regular
           updates and stay connected!
         </p>
-        <SubscribeBtn />
+        <Link
+          href={"/subscribe"}
+          className="block w-48 mx-auto px-5 py-3 text-center font-bold text-2xl border-slate-50 border-2 rounded hover:text-blue-400 hover:border-blue-400 hover:duration-300"
+        >
+          Subscribe
+        </Link>
       </Container>
     </section>
   );
