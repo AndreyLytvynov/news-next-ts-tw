@@ -28,7 +28,7 @@ const SliderSection: FC<SliderSectionProps> = ({ news }) => {
   return (
     <section className="pt-8">
       <Container>
-        <Slider {...settings}>
+        <Slider {...settings} className="overflow-hidden">
           {news.map((newsItem) => {
             return (
               <div key={newsItem.id} className="h-96 lg:h-110 w-60 relative">
