@@ -7,7 +7,7 @@ import NewsSection from "@/components/sections/NewsSection/NewsSection";
 import { request } from "@/lib/datocms";
 
 import { INewsItem } from "@/types/news.type";
-import { HOMEPAGE_QUERY } from "@/constants/api";
+import { HOMEPAGE_QUERY } from "@/Constants/api";
 
 type IHomePageProps = {
   data: {
