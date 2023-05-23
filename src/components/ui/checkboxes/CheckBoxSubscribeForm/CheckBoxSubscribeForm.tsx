@@ -7,7 +7,10 @@ const CheckBoxSubscribeForm: FC<CheckBoxFieldProps> = ({
   register,
 }) => {
   return (
-    <label className="w-full sm:flex items-center mb-6" htmlFor={id}>
+    <label
+      className="w-full sm:flex items-center mb-6 cursor-pointer"
+      htmlFor={id}
+    >
       <div className="sm:w-20"></div>
       <div className="sm:w-96 flex text-gray-500 font-bold relative">
         <input

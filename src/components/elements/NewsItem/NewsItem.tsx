@@ -31,12 +31,12 @@ const NewsItem: FC<INewsItemProps> = ({ news }) => {
         <div className="mt-3 h-2/6 md:h-1/6 flex flex-row items-center justify-between">
           <Link
             href={`news/${news.id}`}
-            className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 hover:duration-300"
+            className="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg text-white bg-blue-800 border-blue-400 hover:text-blue-400 hover:border hover:bg-white hover:duration-400"
           >
-            Read more
+            News details
             <IconArrowRight />
           </Link>
-          <p className="text-slate-400">{news.date}</p>
+          <p className="text-slate-500">{news.date}</p>
         </div>
       </div>
     </li>

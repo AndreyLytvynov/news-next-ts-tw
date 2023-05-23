@@ -11,6 +11,7 @@ const MainNavigate: FC = () => {
             smooth={true}
             duration={700}
             className="py-4 hover:text-blue-400 hover:duration-300"
+            href="/"
           >
             <span>HOME</span>
           </Link>
@@ -21,6 +22,7 @@ const MainNavigate: FC = () => {
             smooth={true}
             offset={-80}
             duration={700}
+            href="/"
             className="py-4 hover:text-blue-400 hover:duration-300"
           >
             <span>NEWS</span>
