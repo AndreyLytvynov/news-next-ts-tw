@@ -31,7 +31,10 @@ const SliderSection: FC<SliderSectionProps> = ({ news }) => {
         <Slider {...settings} className="overflow-hidden">
           {news.map((newsItem) => {
             return (
-              <div key={newsItem.id} className="h-96 lg:h-110 w-60 relative">
+              <div
+                key={newsItem.id}
+                className="h-96 lg:h-110 w-60 relative px-1"
+              >
                 <Image
                   className="mx-auto object-cover h-full w-full"
                   src={newsItem.image.url}
@@ -39,11 +42,13 @@ const SliderSection: FC<SliderSectionProps> = ({ news }) => {
                   width="400"
                   height="600"
                 />
-                <Link href={`news/${newsItem.id}`}>
-                  <h3 className="absolute bottom-0 px-3 py-1 lg:py-2 text-lg md:text-2xl lg:text-4xl font-bold tracking-tight text-slate-50 dark:text-white line-clamp-1 bg-slate-500 bg-opacity-60 w-full hover:text-slate-200 hover:bg-opacity-60 hover:duration-300">
-                    {newsItem.title}
-                  </h3>
-                </Link>
+                <div className="absolute bottom-0 left-0 px-1">
+                  <Link href={`news/${newsItem.id}`}>
+                    <h3 className=" px-3 py-1 lg:py-2 text-lg md:text-2xl lg:text-4xl font-bold tracking-tight text-slate-50 dark:text-white line-clamp-1 bg-slate-500 bg-opacity-60 w-full hover:text-slate-200 hover:bg-opacity-60 hover:duration-300">
+                      {newsItem.title}
+                    </h3>
+                  </Link>
+                </div>
               </div>
             );
           })}
