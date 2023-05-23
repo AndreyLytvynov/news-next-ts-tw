@@ -77,7 +77,7 @@ const FormSubscribe: FC = () => {
         error={errors?.email?.message}
       />
       <CheckBoxSubscribeForm
-        id="inline-email"
+        id="newsletter"
         register={register("newsletter")}
         error={errors?.newsletter?.message}
       />
