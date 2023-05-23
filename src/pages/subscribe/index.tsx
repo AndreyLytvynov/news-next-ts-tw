@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import SubscribeFormSection from "@/components/sections/SubscribeFormSection/SubscribeFormSection";
+import SubscribeFormSection from "@/sections/SubscribeFormSection/SubscribeFormSection";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

@@ -2,7 +2,7 @@ import { FC } from "react";
 
 import Container from "@/components/elements/Container/Container";
 
-import styles from "@/components/sections/HeroSection/hero.module.css";
+import styles from "@/sections/HeroSection/hero.module.css";
 import Link from "next/link";
 
 const HeroSection: FC = () => {

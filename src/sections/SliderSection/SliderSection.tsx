@@ -8,7 +8,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { SliderSectionProps } from "@/components/sections/SliderSection/types";
+import { SliderSectionProps } from "@/sections/SliderSection/types";
 
 const SliderSection: FC<SliderSectionProps> = ({ news }) => {
   const settings = {
