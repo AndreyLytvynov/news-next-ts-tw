@@ -14,7 +14,7 @@ const InputsSubscribeForm: FC<InputFieldProps> = ({
         className="w-full text-gray-500 font-bold text-left sm:flex items-center cursor-pointer"
         htmlFor={id}
       >
-        <p className="w-20">{label}</p>
+        <p className="w-20">{label}*</p>
 
         <div className="w-full sm:w-96">
           <input

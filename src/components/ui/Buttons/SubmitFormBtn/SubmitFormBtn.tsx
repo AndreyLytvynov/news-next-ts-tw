@@ -11,7 +11,7 @@ const SubmitFormBtn: FC<SubmitFormBtnProps> = ({ disabled }) => {
       type="submit"
       disabled={disabled}
     >
-      <span>sign up</span>
+      <span>Subscribe</span>
       {disabled ? (
         <Oval
           height={22}

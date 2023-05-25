@@ -14,7 +14,7 @@ const NewsSection: FC<INewsSectionProps> = ({ news }) => {
     <section className="py-8" id="news">
       <Container>
         <h2 className="font-bold text-4xl sm:text-5xl text-center text-black">
-          Fresh News
+          News
         </h2>
         <NewsList news={news} />
       </Container>
